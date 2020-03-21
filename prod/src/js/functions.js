@@ -21,23 +21,6 @@ function submit_form() {
         $('#user_name').focus();
         return;
     }
-
-    // Validate if the text field is empty or data is proper
-    if($('#user_phone').val().length>0) {
-        
-		//here it'll take the value without whitespaces only at the beginning and the end.
-		if($('#user_phone').val().trim()=='') {
-            alert('Please enter the phone number');
-            $('#user_phone').val('');
-            $('#user_phone').focus();
-            return;
-        }
-    } else {
-        alert('Please enter the phone number');
-        $('#user_phone').val('');
-        $('#user_phone').focus();
-        return;
-	}
 	
 	if($('#user_email').val().length>0) {
         
@@ -53,7 +36,24 @@ function submit_form() {
         $('#user_email').val('');
         $('#user_email').focus();
         return;
-    }
+	}
+	
+	// Validate if the text field is empty or data is proper
+    if($('#user_phone').val().length>0) {
+        
+		//here it'll take the value without whitespaces only at the beginning and the end.
+		if($('#user_phone').val().trim()=='') {
+            alert('Please enter the phone number');
+            $('#user_phone').val('');
+            $('#user_phone').focus();
+            return;
+        }
+    } else {
+        alert('Please enter the phone number');
+        $('#user_phone').val('');
+        $('#user_phone').focus();
+        return;
+	}
 
     // Validate if the text field is empty or data is proper
     if($('#user_msg').val().length>0) {
