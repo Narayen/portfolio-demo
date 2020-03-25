@@ -73,10 +73,10 @@ function submit_form() {
 	// }
 	
 	alert('OK');
-	alert(NAME);
-	alert(EMAIL);
-	alert(Phone);
-	alert(COMMENTS);
+	// alert(NAME);
+	// alert(EMAIL);
+	// alert(Phone);
+	// alert(COMMENTS);
 	
 	// $.post("/submit", {
 	// 	user_name: name,
