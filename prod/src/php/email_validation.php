@@ -6,7 +6,7 @@
     $message .= "NAME: ".$_REQUEST['text-558']."\r\n";
     $message .= "Phone: ".$_REQUEST['tel-561']."\r\n";
     $message .= "COMMENTS: ".$_REQUEST['com-562'];
-    $headers = 'From: info@training.helpfulbalance.com';
+    // $headers = 'From: info@training.helpfulbalance.com';
 
     
     mail($to_email,$subject,$message,$headers);
