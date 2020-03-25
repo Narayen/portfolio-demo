@@ -75,7 +75,7 @@ function submit_form() {
 	alert('OK');
 	alert(NAME);
 	alert(EMAIL);
-	alert(phone);
+	alert(Phone);
 	alert(COMMENTS);
 	
 	// $.post("/submit", {
